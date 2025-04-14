@@ -24,3 +24,14 @@ const books = [
 const getBookTitles = (arr) => arr.map((book) => book.title);
 
 console.log(getBookTitles(books));
+
+// sorting objects
+const cars = [
+  { make: "Toyota", model: "Axio", year: 2010 },
+  { make: "Honda", model: "Grace", year: 2005 },
+  { make: "Nissan", model: "Sunny", year: 2012 },
+];
+
+const sortCarsByYear = (arr) => arr.sort((a, b) => a.year - b.year);
+
+console.log(sortCarsByYear(cars));
