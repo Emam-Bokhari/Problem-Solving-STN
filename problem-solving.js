@@ -35,3 +35,20 @@ const cars = [
 const sortCarsByYear = (arr) => arr.sort((a, b) => a.year - b.year);
 
 console.log(sortCarsByYear(cars));
+
+// find and modify
+const persons = [
+  { name: "Abdul Karim", age: 40 },
+  { name: "Fatema Khatun", age: 35 },
+  { name: "Jahangir Alam", age: 28 },
+];
+
+const updateAgeByName = (arr, targetName, newAge) => {
+  const person = arr.find((item) => item.name === targetName);
+  if (person) {
+    person.age = newAge;
+  }
+  return arr;
+};
+
+console.log(updateAgeByName(persons, "Jahangir Alam", 33));
