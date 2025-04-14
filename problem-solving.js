@@ -14,4 +14,13 @@ const getMaleNames = (arr) => {
 
 console.log(getMaleNames(people));
 
-//
+// object manipulation
+const books = [
+  { title: "Lal Shalu", author: "Syed Waliullah", year: 1948 },
+  { title: "Padma Nadir Majhi", author: "Manik Bandopadhyay", year: 1936 },
+  { title: "Ekattorer Dinguli", author: "Jahanara Imam", year: 1986 },
+];
+
+const getBookTitles = (arr) => arr.map((book) => book.title);
+
+console.log(getBookTitles(books));
