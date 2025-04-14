@@ -52,3 +52,11 @@ const updateAgeByName = (arr, targetName, newAge) => {
 };
 
 console.log(updateAgeByName(persons, "Jahangir Alam", 33));
+
+// leap year checker
+const isLeapYear = (year) => {
+  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+};
+
+console.log(isLeapYear(2024));
+console.log(isLeapYear(2025));
